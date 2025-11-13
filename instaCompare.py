@@ -14,7 +14,7 @@ for i in followersJson:
     followersArr.append(i['string_list_data'][0]['value'])
 
 for i in followingJson['relationships_following']:
-    followingArr.append(i['string_list_data'][0]['value'])
+    followingArr.append(i['title'])
 
 for i in followingArr:
     if i not in followersArr:
